@@ -81,8 +81,6 @@
   <body>
     <!--* container/body wrapper for every content in the body -->
     <div class="flex">
-      <!--* nav space -->
-      <div class="nav-space"></div>
       <!-- nav bar -->
       <nav>
         <div class="nav-wrapper">
@@ -136,6 +134,69 @@
           </div>
         </div>
       </nav>
+
+      <!-- header -->
+      <header>
+        <div class="header-wrapper">
+          <div class="header-body">
+            <!-- header description -->
+            <div class="header-b-description">
+              <h1>Find a <span>job</span> easily</h1>
+              <p
+                >With verified, up-to-date job listings directly from employer
+                websites, we create a premium experience for job seekers,
+                employers, and data seekers alike.</p
+              >
+            </div>
+
+            <!-- search bar -->
+            <div class="header-b-searchbar">
+              <!-- search job input -->
+              <span>
+                <label for="search-job" hidden></label>
+                <input
+                  type="search"
+                  name="search-job"
+                  id="search-job"
+                  placeholder="Enter keywords, skill, interest"
+                />
+              </span>
+              <!-- search location input -->
+              <span>
+                <label for="search-location" hidden></label>
+                <input
+                  type="search"
+                  name="search-location"
+                  id="search-location"
+                  placeholder="location"
+                />
+              </span>
+              <!-- search button -->
+              <span>
+                <label for="search-button" hidden></label>
+                <button type="submit" id="search-button"
+                  ><i class="fas fa-search"></i
+                ></button>
+              </span>
+            </div>
+
+            <!-- people who trust us -->
+            <div class="header-b-trustees">
+              <h3>Trusted by:</h3>
+              <div>
+                <span><img src="/img/company-logos/paystack-removebg-preview.svg" alt="" /></span>
+                <span><img src="/img/company-logos/google-removebg-preview.svg" alt="" /></span>
+                <span><img src="/img/company-logos/kpmg-removebg-preview.svg" alt="" /></span>
+              </div>
+            </div>
+          </div>
+          <div class="header-image">
+            <div class="header-image-bdr">
+              <img src="/img/photos/header-image.png" alt="man smiling" />
+            </div>
+          </div>
+        </div>
+      </header>
     </div>
 
     <!--* Javascript -->
