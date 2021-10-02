@@ -74,11 +74,15 @@
     />
     <!-- main CSS styles -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- media query styles -->
+    <link rel="stylesheet" type="text/css" href="css/mediaquery.css" />
   </head>
 
   <body>
     <!--* container/body wrapper for every content in the body -->
     <div class="flex">
+      <!--* nav space -->
+      <div class="nav-space"></div>
       <!-- nav bar -->
       <nav>
         <div class="nav-wrapper">
@@ -89,36 +93,36 @@
             /></a>
           </div>
 
-          <!-- menu on large screen -->
-          <div class="nav-links">
-            <!-- nav link cntr -->
-            <ul class="nav-link-wrapper">
-              <!-- nav links -->
-              <li><a class="nav-link active" href="#">Companies</a></li>
-              <li><a class="nav-link" href="#">Candidates</a></li>
-              <li>
-                <a class="nav-link" href="#">Assessment</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Post a Job</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Career Advice</a>
-              </li>
-            </ul>
-          </div>
+          <div class="nav-links-n-btns">
+            <!-- menu on large screen -->
+            <div class="nav-links">
+              <!-- nav link cntr -->
+              <ul class="nav-link-wrapper">
+                <!-- nav links -->
+                <li><a class="nav-link active" href="#">Companies</a></li>
+                <li><a class="nav-link" href="#">Candidates</a></li>
+                <li>
+                  <a class="nav-link" href="#">Assessment</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Post a Job</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Career Advice</a>
+                </li>
+              </ul>
+            </div>
 
-          <!-- login and sign up buttons -->
-          <div class="nav-btns">
-            <!-- nav btn cntr -->
-            <div class="nav-btn-wrapper">
+            <!-- login and sign up buttons -->
+            <div class="nav-btns">
               <!-- nav btns -->
-              <button type="submit">
-                <a class="nav-btn signup" href="#">Sign Up</a>
-              </button>
-              <button type="submit">
-                <a class="nav-btn login" href="#">Log In</a>
-              </button>
+              <a class="nav-btn signup" href="#">
+                <button type="submit">Sign Up</button>
+              </a>
+
+              <a class="nav-btn login" href="#">
+                <button type="submit">Log In</button>
+              </a>
             </div>
           </div>
 
@@ -133,5 +137,8 @@
         </div>
       </nav>
     </div>
+
+    <!--* Javascript -->
+    <script src="/js/script.js"></script>
   </body>
 </html>

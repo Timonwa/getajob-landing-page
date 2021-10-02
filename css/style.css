@@ -1,3 +1,135 @@
-p{
-    color: rgb(229, 229, 229);
+/** nav bar */
+/* nav bar wrapper */
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: var(--nav-height);
+  padding: 20px 50px;
+  z-index: 10;
+  width: 100vw;
+  font-size: 14px;
+  border: 1px solid #000;
+}
+
+/* logo */
+.nav-wrapper > .nav-logo > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-wrapper > .nav-logo > a > img {
+  width: 50px;
+  margin: 0;
+}
+
+/* nav bar links and btns */
+.nav-wrapper > .nav-links-n-btns {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* nav bar links */
+.nav-wrapper > .nav-links-n-btns > .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-wrapper > .nav-links-n-btns > .nav-links > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* nav bar individual links */
+.nav-wrapper > .nav-links-n-btns > .nav-links > ul > li {
+  margin: 0 20px;
+}
+
+/** set the links and its states to main color */
+.nav-wrapper > .nav-links-n-btns > .nav-links > ul > li > a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  color: var(--dark-grey);
+}
+
+/* nav buttons */
+.nav-wrapper > .nav-links-n-btns > .nav-btns {
+  display: flex;
+}
+
+/* individual nav button */
+.nav-wrapper > .nav-links-n-btns > .nav-btns > .nav-btn > button {
+  padding: 10px 20px;
+}
+
+/* log in button */
+.nav-wrapper > .nav-links-n-btns > .nav-btns > .login > button {
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: var(--light-green);
+  color: var(--bright-green);
+  font-weight: bold;
+}
+
+/* burger menu */
+.nav-wrapper > .burger-menu {
+  display: none;
+}
+
+/* dropdown menu */
+.dropdown-menu {
+  position: relative;
+}
+
+/* dropdown open arrow */
+.dropdown-open {
+  display: inline-block;
+}
+
+/* dropdown links cntr */
+.dropdown-links {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+}
+
+/* dropdown close arrow and dropdown links container */
+.dropdown-close,
+.dropdown-links {
+  display: none;
+}
+
+/* individual dropdown links */
+.dropdown-links > li {
+  padding: 5px 0 10px;
+  text-align: center;
 }

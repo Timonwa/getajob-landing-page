@@ -14,6 +14,7 @@
   --light-grey: rgba(155, 155, 155);
   --lighter-grey: rgba(229, 229, 229);
   --lightest-grey: rgba(244, 245, 249);
+  --bgc: rgb(255, 255, 255);
 
   /** dimension variables */
   /* my usual default margin-x is 0 and margin-y is 100px, 50px, 20px(lg, md, sm) */
@@ -30,8 +31,8 @@
 /** body */
 body {
   font-family: var(--main-font);
-  background-color: var(--main-bgc);
-  color: var(--main-color);
+  background-color: var(--bgc);
+  color: var(--dark-grey);
 }
 
 /** reset the links main color */
@@ -40,16 +41,20 @@ a:link,
 a:hover,
 a:active,
 a:visited {
-  color: var(--main-color);
+  color: black;
 }
 
 /** give a simple border to the buttons */
 button {
-  border: 1px solid var(--main-color);
+  border: none;
 }
 
 /** to ensure that when you click on an id link, the nav will not cover the beginning of the content the id is pointing to */
 [id] {
   scroll-margin-top: calc(var(--nav-height) + 5rem);
+}
+
+.nav-space{
+  height: var(--nav-height);
 }
 
