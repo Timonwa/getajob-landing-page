@@ -1,0 +1,55 @@
+/*! Timonwa CSS Variables */
+/** downloaded fonts */
+@font-face {
+  font-family: "font-name";
+  src: url("/downloaded-font-file-path");
+}
+
+/** root file */
+:root {
+  /** main color variables */
+  --bright-green: rgba(6, 148, 42);
+  --light-green: rgba(6, 148, 42, 0.2);
+  --dark-grey: rgba(63, 64, 63);
+  --light-grey: rgba(155, 155, 155);
+  --lighter-grey: rgba(229, 229, 229);
+  --lightest-grey: rgba(244, 245, 249);
+
+  /** dimension variables */
+  /* my usual default margin-x is 0 and margin-y is 100px, 50px, 20px(lg, md, sm) */
+  /* mu usual default padding is 20px */
+  --nav-height: 60px;
+  --section-div-margin: 0px 50px;
+  --section-div-padding: 20px;
+
+  /** font variables */
+  --main-font: ;
+  --secondary-font: ;
+}
+
+/** body */
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-bgc);
+  color: var(--main-color);
+}
+
+/** reset the links main color */
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  color: var(--main-color);
+}
+
+/** give a simple border to the buttons */
+button {
+  border: 1px solid var(--main-color);
+}
+
+/** to ensure that when you click on an id link, the nav will not cover the beginning of the content the id is pointing to */
+[id] {
+  scroll-margin-top: calc(var(--nav-height) + 5rem);
+}
+
