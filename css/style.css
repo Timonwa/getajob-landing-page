@@ -7,12 +7,13 @@ body::after {
   content: "";
   display: block;
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--nav-height) + 100vh);
   top: -30px;
   right: 300px;
   border-radius: 30px;
   background-color: rgba(6, 148, 42, 0.05);
   z-index: -10;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
 }
 
@@ -258,13 +259,6 @@ a:visited {
   transition: 300ms border-color;
 }
 
-/* // location search placeholder */
-/* .header-wrapper > .header-body > .header-b-searchbar > .search-location-group > input::before::placeholder{
-  position: absolute;
-  display: block;
-  content: 'ki';
-} */
-
 /* search job bar */
 .header-wrapper > .header-body > .header-b-searchbar > .search-job-group {
   width: calc(100% - 140px);
@@ -404,8 +398,7 @@ a:visited {
   flex-direction: row;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 /* individual job card*/
@@ -500,11 +493,20 @@ a:visited {
   > span
   > button {
   color: var(--bright-green);
-  background-color: var(--light-green);
   padding: 5px 20px;
   font-size: 0.6em;
   font-weight: bold;
   border-radius: 50px;
+}
+
+.recommendations-wrapper
+  > .job-cards-cntr
+  > .job-card
+  > .job-lower-card
+  > div
+  > span
+  > button:active {
+  background-color: var(--light-green);
 }
 
 /* job post prev and next btns */

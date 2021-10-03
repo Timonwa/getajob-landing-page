@@ -25,3 +25,34 @@ menu.addEventListener("click", function () {
         navLinkOpenMenu()
     }
 });
+
+
+
+// job recommendations scroll
+var next = document.querySelector('.next-btn>i');
+next.onclick = function () {
+    var container = document.querySelector('.job-cards-cntr');
+    sideScroll(container, 'right', 25, 100, 10);
+};
+
+var prev = document.querySelector('.prev-btn>i');
+prev.onclick = function () {
+    var container = document.querySelector('.job-cards-cntr');
+    sideScroll(container, 'left', 25, 100, 10);
+};
+
+function sideScroll(element, direction, speed, distance, step) {
+    scrollAmount = 0;
+    var slideTimer = setInterval(function () {
+        if (direction == 'left') {
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+            prev.style.color = "var(--bright-green)";
+        }
+        scrollAmount += step;
+        if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+} 
