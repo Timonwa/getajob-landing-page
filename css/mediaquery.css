@@ -97,8 +97,8 @@
 
 /* 768px screen width and below */
 @media screen and (max-width: 786px) {
-  body::before {
-    display: none;
+  body::after {
+    right: 0px;
   }
 
   /* header */

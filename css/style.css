@@ -2,16 +2,18 @@
 body {
   position: relative;
 }
-body::before {
+body::after {
   position: absolute;
   content: "";
   display: block;
+  width: 100vw;
+  height: 100vh;
   top: -30px;
-  width: calc(100vw - 300px);
-  height: calc(100vh - 50px);
+  right: 300px;
   border-radius: 30px;
   background-color: rgba(6, 148, 42, 0.05);
   z-index: -10;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
 }
 
 /** nav bar */
