@@ -1,12 +1,12 @@
 /** body flex cntr */
-body{
+body {
   position: relative;
 }
-body::before{
+body::before {
   position: absolute;
   content: "";
   display: block;
-  top: -30px ;
+  top: -30px;
   width: calc(100vw - 300px);
   height: calc(100vh - 50px);
   border-radius: 30px;
@@ -371,4 +371,144 @@ a:visited {
   position: absolute;
   top: -20px;
   left: -20px;
+}
+
+/** recommended job section */
+.recommendations-wrapper {
+  margin: var(--section-div-margin);
+  padding: var(--section-div-padding);
+  display: flex;
+  flex-direction: column;
+}
+
+/* heading */
+.recommendations-wrapper > h2 {
+  text-align: left;
+}
+
+/* job cards cntr */
+.recommendations-wrapper > .job-cards-cntr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* individual job card*/
+.recommendations-wrapper > .job-cards-cntr > .job-card {
+  min-width: 300px;
+  margin: 0 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 30px rgba(6, 148, 42, 0.05);
+  box-shadow: 0px 10px 30px rgba(6, 148, 42, 0.05);
+}
+
+/* job card inner cards */
+.recommendations-wrapper > .job-cards-cntr > .job-card > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+}
+/* upper card */
+.recommendations-wrapper > .job-cards-cntr > .job-card > .job-upper-card {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommendations-wrapper > .job-cards-cntr > .job-card > .job-upper-card > p {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin: 0;
+  padding: 5px 20px;
+  font-size: 0.6em;
+  border-radius: 50px;
+  color: var(--light-grey);
+  background-color: var(--lighter-grey);
+}
+
+/* job middle card */
+.recommendations-wrapper > .job-cards-cntr > .job-card > .job-middle-card {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.recommendations-wrapper
+  > .job-cards-cntr
+  > .job-card
+  > .job-middle-card
+  > p
+  > img {
+  max-height: 50px;
+  margin: 10px 0;
+}
+
+/* job lower card */
+.recommendations-wrapper > .job-cards-cntr > .job-card > .job-lower-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid var(--lighter-grey);
+}
+
+.recommendations-wrapper > .job-cards-cntr > .job-card > .job-lower-card > h5 {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  padding-bottom: 5px;
+}
+
+.recommendations-wrapper > .job-cards-cntr > .job-card > .job-lower-card > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.recommendations-wrapper
+  > .job-cards-cntr
+  > .job-card
+  > .job-lower-card
+  > div
+  > span
+  > button {
+  color: var(--bright-green);
+  background-color: var(--light-green);
+  padding: 5px 20px;
+  font-size: 0.6em;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.recommendations-wrapper > .prevnext-btns {
+  align-self: flex-end;
+  margin: 20px 0;
+}
+.recommendations-wrapper > .prevnext-btns > span > i {
+  padding-left: 10px;
+  color: var(--lighter-grey);
+  cursor: pointer;
+}
+.recommendations-wrapper > .prevnext-btns > .next-btn > i {
+  color: var(--bright-green);
 }
