@@ -97,6 +97,10 @@
 
 /* 768px screen width and below */
 @media screen and (max-width: 786px) {
+  body::before {
+    display: none;
+  }
+
   /* header */
   .header-wrapper {
     -webkit-box-orient: vertical;
