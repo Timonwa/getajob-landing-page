@@ -1,5 +1,8 @@
 /** nav bar */
 /* nav bar wrapper */
+nav {
+  /* width: 100vw; */
+}
 .nav-wrapper {
   position: relative;
   top: 0;
@@ -19,14 +22,20 @@
   height: var(--nav-height);
   padding: 20px 50px;
   z-index: 10;
-  width: 100vw;
+  width: inherit;
   font-size: 14px;
 }
 
 /* logo */
 .nav-wrapper > .nav-logo > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .nav-wrapper > .nav-logo > a > img {
@@ -36,7 +45,10 @@
 
 /* nav bar links and btns */
 .nav-wrapper > .nav-links-n-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 100%;
 }
@@ -50,7 +62,11 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -62,7 +78,11 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -82,6 +102,8 @@ a:visited {
 
 /* nav buttons */
 .nav-wrapper > .nav-links-n-btns > .nav-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -131,4 +153,208 @@ a:visited {
 .dropdown-links > li {
   padding: 5px 0 10px;
   text-align: center;
+}
+
+/** header */
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: var(--section-div-margin);
+  padding: var(--section-div-padding);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* header body */
+/* body description heading */
+.header-wrapper > .header-body > .header-b-description > h1 {
+  text-align: left;
+}
+
+.header-wrapper > .header-body > .header-b-description > h1 > span {
+  color: var(--bright-green);
+}
+
+/*  search bar */
+.header-wrapper > .header-body > .header-b-searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+}
+
+/* search bar inputs */
+.header-wrapper > .header-body > .header-b-searchbar > span > input,
+.header-wrapper > .header-body > .header-b-searchbar > span > button {
+  height: 30px;
+  padding: 15px;
+  border: 1px solid var(--lighter-grey);
+}
+
+/* search bar inputs placeholder */
+.header-wrapper
+  > .header-body
+  > .header-b-searchbar
+  > span
+  > input::-webkit-input-placeholder {
+  color: var(--light-grey);
+  font-size: 0.8em;
+}
+.header-wrapper
+  > .header-body
+  > .header-b-searchbar
+  > span
+  > input::-moz-placeholder {
+  color: var(--light-grey);
+  font-size: 0.8em;
+}
+.header-wrapper
+  > .header-body
+  > .header-b-searchbar
+  > span
+  > input:-ms-input-placeholder {
+  color: var(--light-grey);
+  font-size: 0.8em;
+}
+.header-wrapper
+  > .header-body
+  > .header-b-searchbar
+  > span
+  > input::-ms-input-placeholder {
+  color: var(--light-grey);
+  font-size: 0.8em;
+}
+.header-wrapper
+  > .header-body
+  > .header-b-searchbar
+  > span
+  > input::placeholder {
+  color: var(--light-grey);
+  font-size: 0.8em;
+}
+
+/* search input on hover */
+.header-wrapper > .header-body > .header-b-searchbar > span > input:hover {
+  border-color: var(--bright-green);
+  -webkit-transition: 300ms border-color;
+  -o-transition: 300ms border-color;
+  transition: 300ms border-color;
+}
+
+/* // location search placeholder */
+/* .header-wrapper > .header-body > .header-b-searchbar > .search-location-group > input::before::placeholder{
+  position: absolute;
+  display: block;
+  content: 'ki';
+} */
+
+/* search job bar */
+.header-wrapper > .header-body > .header-b-searchbar > .search-job-group {
+  width: calc(100% - 140px);
+}
+
+.header-wrapper
+  > .header-body
+  > .header-b-searchbar
+  > .search-job-group
+  > input {
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+}
+
+/*search location  bar */
+.header-wrapper > .header-body > .header-b-searchbar > .search-location-group {
+  width: 100px;
+}
+.header-wrapper
+  > .header-body
+  > .header-b-searchbar
+  > .search-location-group
+  > input {
+  width: 100%;
+}
+
+/*  search button */
+.header-wrapper > .header-body > .header-b-searchbar > .search-button-group {
+  width: 40px;
+}
+
+.header-wrapper
+  > .header-body
+  > .header-b-searchbar
+  > .search-button-group
+  > button {
+  width: 100%;
+  background-color: var(--bright-green);
+  border: 1px solid var(--bright-green);
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* search button on hover */
+.header-wrapper
+  > .header-body
+  > .header-b-searchbar
+  > .search-button-group
+  > button:hover {
+  opacity: 0.9;
+  -webkit-transition: 300ms opacity;
+  -o-transition: 300ms opacity;
+  transition: 300ms opacity;
+}
+
+/* body trustees cntr */
+.header-wrapper > .header-body > .header-b-trustees > h3 {
+  text-align: left;
+}
+
+/* trustees logo */
+.header-wrapper > .header-body > .header-b-trustees > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header-wrapper > .header-body > .header-b-trustees > div > span {
+  padding: 0 5px;
+}
+.header-wrapper > .header-body > .header-b-trustees > div > span > img {
+  height: 1.5em;
+}
+
+/* header image */
+.header-wrapper > .header-image {
+  margin-left: 80px;
+}
+
+.header-wrapper > .header-image > .header-image-bdr {
+  border: 2px solid var(--bright-green);
+  border-radius: 15px;
+  position: relative;
+  width: 350px;
+  height: 400px;
+}
+.header-wrapper > .header-image > .header-image-bdr > img {
+  width: inherit;
+  height: inherit;
+  border-radius: 15px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
 }

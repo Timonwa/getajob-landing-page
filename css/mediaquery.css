@@ -1,5 +1,5 @@
 /** nav link styling on smaller screens where the burger menu becomes visible and the nav links hidden */
-/* 768px screen width and below */
+/* 960px screen width and below */
 @media screen and (max-width: 960px) {
   /* nav bar links and btns */
   .nav-wrapper > .nav-links-n-btns {
@@ -86,5 +86,62 @@
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+  }
+
+  /* header image */
+  .header-wrapper > .header-image > .header-image-bdr {
+    width: 280px;
+    height: 330px;
+  }
+}
+
+/* 768px screen width and below */
+@media screen and (max-width: 786px) {
+  /* header */
+  .header-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* header image */
+  .header-wrapper > .header-image {
+    display: none;
+  }
+}
+/* 500px screen width and below */
+@media screen and (max-width: 500px) {
+  /*  search bar */
+  .header-wrapper > .header-body > .header-b-searchbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  /* search bar inputs */
+  .header-wrapper > .header-body > .header-b-searchbar > .search-job-group,
+  .header-wrapper > .header-body > .header-b-searchbar > .search-location-group,
+  .header-wrapper > .header-body > .header-b-searchbar > .search-button-group {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .header-wrapper
+    > .header-body
+    > .header-b-searchbar
+    > .search-job-group
+    > input,
+  .header-wrapper
+    > .header-body
+    > .header-b-searchbar
+    > .search-location-group
+    > input,
+  .header-wrapper
+    > .header-body
+    > .header-b-searchbar
+    > .search-button-group
+    > button {
+    border-radius: 20px;
   }
 }

@@ -81,7 +81,7 @@
   <body>
     <!--* container/body wrapper for every content in the body -->
     <div class="flex">
-      <!-- nav bar -->
+      <!--* nav bar -->
       <nav>
         <div class="nav-wrapper">
           <!-- website logo -->
@@ -91,6 +91,7 @@
             /></a>
           </div>
 
+          <!-- nav links and btns cntr -->
           <div class="nav-links-n-btns">
             <!-- menu on large screen -->
             <div class="nav-links">
@@ -135,9 +136,10 @@
         </div>
       </nav>
 
-      <!-- header -->
+      <!--* header -->
       <header>
         <div class="header-wrapper">
+          <!--* header body -->
           <div class="header-body">
             <!-- header description -->
             <div class="header-b-description">
@@ -152,17 +154,17 @@
             <!-- search bar -->
             <div class="header-b-searchbar">
               <!-- search job input -->
-              <span>
+              <span class="search-job-group">
                 <label for="search-job" hidden></label>
                 <input
                   type="search"
                   name="search-job"
                   id="search-job"
-                  placeholder="Enter keywords, skill, interest"
+                  placeholder="Enter keywords, skill, interest..."
                 />
               </span>
               <!-- search location input -->
-              <span>
+              <span class="search-location-group">
                 <label for="search-location" hidden></label>
                 <input
                   type="search"
@@ -172,7 +174,7 @@
                 />
               </span>
               <!-- search button -->
-              <span>
+              <span class="search-button-group">
                 <label for="search-button" hidden></label>
                 <button type="submit" id="search-button"
                   ><i class="fas fa-search"></i
@@ -184,12 +186,26 @@
             <div class="header-b-trustees">
               <h3>Trusted by:</h3>
               <div>
-                <span><img src="/img/company-logos/paystack-removebg-preview.svg" alt="" /></span>
-                <span><img src="/img/company-logos/google-removebg-preview.svg" alt="" /></span>
-                <span><img src="/img/company-logos/kpmg-removebg-preview.svg" alt="" /></span>
+                <span
+                  ><img
+                    src="/img/company-logos/paystack-removebg-preview.svg"
+                    alt=""
+                /></span>
+                <span
+                  ><img
+                    src="/img/company-logos/google-removebg-preview.svg"
+                    alt=""
+                /></span>
+                <span
+                  ><img
+                    src="/img/company-logos/kpmg-removebg-preview.svg"
+                    alt=""
+                /></span>
               </div>
             </div>
           </div>
+
+          <!--* header image -->
           <div class="header-image">
             <div class="header-image-bdr">
               <img src="/img/photos/header-image.png" alt="man smiling" />
