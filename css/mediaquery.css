@@ -278,4 +278,9 @@
   .howitworks-wrapper > .howitworks-images > div > figure {
     position: initial;
   }
+
+  /** cta section */
+  .cta-wrapper {
+    margin: 50px 30px;
+  }
 }

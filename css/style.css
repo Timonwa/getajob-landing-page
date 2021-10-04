@@ -2,6 +2,7 @@
 /* body background shape image */
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 body::after {
@@ -796,11 +797,13 @@ a:visited {
 }
 
 .reviews-wrapper > .review-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 20px 0;
 }
 
-.reviews-wrapper > .review-card > div> .user-image {
+.reviews-wrapper > .review-card > div > .user-image {
   border: 2px solid var(--bright-green);
   width: 250px;
   height: 250px;
@@ -808,7 +811,7 @@ a:visited {
   margin: 40px 0px 20px 20px;
   position: relative;
 }
-.reviews-wrapper > .review-card >div> .user-image > img {
+.reviews-wrapper > .review-card > div > .user-image > img {
   width: inherit;
   height: inherit;
   border-radius: 15px;
@@ -877,4 +880,64 @@ a:visited {
 
 .reviews-wrapper > .review-card > .user-review > .user-details > p {
   color: var(--light-grey);
+}
+
+/** cta section */
+.cta-wrapper {
+  margin: 50px 70px;
+  background-image: url("/img/photos/cta-image.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.cta-wrapper > .cta {
+  border-radius: 30px;
+  padding: 60px 40px;
+  color: #fff;
+  background: rgba(43, 48, 58, 0.6);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.cta-wrapper > .cta >.cta-bg{
+  border-radius: 15px;
+  color: #fff;
+}
+
+.cta-wrapper > .cta >.cta-bg > h2 {
+  text-align: left;
+}
+
+.cta-wrapper > .cta  >.cta-bg> p {
+  margin-bottom: 20px;
+}
+
+/* get started button */
+.cta-wrapper > .cta >.cta-bg > a > button {
+  background-color: var(--bright-green);
+  border: 1px solid var(--bright-green);
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* get started button on hover */
+.cta-wrapper > .cta >.cta-bg > a > button:hover {
+  opacity: 0.9;
+  -webkit-transition: 300ms opacity;
+  -o-transition: 300ms opacity;
+  transition: 300ms opacity;
 }
