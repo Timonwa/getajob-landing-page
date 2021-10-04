@@ -152,6 +152,26 @@
   .header-wrapper > .header-image {
     display: none;
   }
+
+  /** extra section */
+.extrasection-wrapper > div {
+  flex-direction: column;
+}
+
+/* extra section story */
+.extrasection-wrapper > div > .extra-section-story {
+  width: 100%;
+}
+
+/* company group logos */
+.extrasection-wrapper > div > .company-group-logos {
+  display: none;
+}
+
+/* company single logos */
+.extrasection-wrapper > div > .company-single-logos {
+  display: flex;
+}
 }
 
 /*! 500px screen width and below */
