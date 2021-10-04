@@ -32,13 +32,13 @@ menu.addEventListener("click", function () {
 var next = document.querySelector('.next-btn>i');
 next.onclick = function () {
     var container = document.querySelector('.job-cards-cntr');
-    sideScroll(container, 'right', 25, 100, 10);
+    sideScroll(container, 'right', 20, 340, 10);
 };
 
 var prev = document.querySelector('.prev-btn>i');
 prev.onclick = function () {
     var container = document.querySelector('.job-cards-cntr');
-    sideScroll(container, 'left', 25, 100, 10);
+    sideScroll(container, 'left', 25, 340, 10);
 };
 
 function sideScroll(element, direction, speed, distance, step) {
