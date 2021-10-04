@@ -487,8 +487,9 @@ a:visited {
   > .job-lower-card
   > div
   > span
-  > button:active {
+  > button:hover {
   background-color: var(--light-green);
+  transition: 300ms background-color;
 }
 
 /* job post prev and next btns */
@@ -637,3 +638,46 @@ a:visited {
   height: 25px;
   border-radius: 50%;
 }
+
+/** categories section */
+.categories-wrapper {
+  margin: var(--section-div-margin);
+  padding: var(--section-div-padding);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.categories-wrapper > .categories-cntr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/* individual categories */
+.categories-wrapper > .categories-cntr > .category{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--lighter-grey);
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.categories-wrapper > .categories-cntr > .category >*{
+  margin-bottom: 10px;
+}
+
+.categories-wrapper > .categories-cntr > .category >p{
+  color: var(--light-grey);
+}
+
