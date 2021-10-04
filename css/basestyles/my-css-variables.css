@@ -26,7 +26,7 @@
   /* my usual default margin-x is 0 and margin-y is 100px, 50px, 20px(lg, md, sm) */
   /* mu usual default padding is 20px */
   --nav-height: 80px;
-  --section-div-margin: 20px 50px;
+  --section-div-margin: 50px;
   --section-div-padding: 20px;
 
   /** font variables */
