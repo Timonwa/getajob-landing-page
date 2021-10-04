@@ -532,15 +532,12 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 /* how it goes image cntr */
 .howitworks-wrapper > .howitworks-images {
   position: relative;
+  width: 60%;
 }
 
 /* image */
@@ -569,4 +566,60 @@ a:visited {
 
 .howitworks-wrapper > .howitworks-images > figure > figcaption > span {
   color: var(--bright-green);
+}
+
+/** steps on how it works writeup */
+.howitworks-wrapper > .howitworks-steps {
+  width: 40%;
+}
+
+/* how it works header */
+.howitworks-wrapper > .howitworks-steps > h2 {
+  text-align: left;
+}
+
+.howitworks-wrapper > .howitworks-steps > p {
+  margin-bottom: 35px;
+}
+
+/* how it works sub headers */
+.howitworks-wrapper > .howitworks-steps > .steps-card > p {
+  margin-bottom: 20px;
+}
+
+.howitworks-wrapper > .howitworks-steps > .steps-card > .step-card-title {
+  font-weight: bold;
+}
+
+/* how it works sub headers icon */
+.howitworks-wrapper
+  > .howitworks-steps
+  > .steps-card
+  > .step-card-title
+  > span
+  > i {
+  padding: 5px;
+  color: var(--bright-green);
+  width: inherit;
+  height: inherit;
+  position: relative;
+  margin: 0 10px;
+}
+
+.howitworks-wrapper
+  > .howitworks-steps
+  > .steps-card
+  > .step-card-title
+  > span
+  > i::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  left: -10px;
+  top: 5px;
+  padding: 5px;
+  background-color: var(--light-green);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
