@@ -1,7 +1,9 @@
-/** body flex cntr */
+/** body */
+/* body background shape image */
 body {
   position: relative;
 }
+
 body::after {
   position: absolute;
   content: "";
@@ -42,7 +44,7 @@ body::after {
   font-size: 14px;
 }
 
-/* logo */
+/* nav bar logo */
 .nav-wrapper > .nav-logo > a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,6 +56,7 @@ body::after {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .nav-wrapper > .nav-logo > a > img {
   width: 50px;
   margin: 0;
@@ -107,7 +110,7 @@ body::after {
   margin: 0 20px;
 }
 
-/** set the links and its states to main color */
+/* set the links and its states to main color */
 .nav-wrapper > .nav-links-n-btns > .nav-links > ul > li > a,
 a:link,
 a:hover,
@@ -138,37 +141,9 @@ a:visited {
 }
 
 /* burger menu */
+/* burger menu */
 .nav-wrapper > .burger-menu {
   display: none;
-}
-
-/* dropdown menu */
-.dropdown-menu {
-  position: relative;
-}
-
-/* dropdown open arrow */
-.dropdown-open {
-  display: inline-block;
-}
-
-/* dropdown links cntr */
-.dropdown-links {
-  position: absolute;
-  top: 40px;
-  width: 100%;
-}
-
-/* dropdown close arrow and dropdown links container */
-.dropdown-close,
-.dropdown-links {
-  display: none;
-}
-
-/* individual dropdown links */
-.dropdown-links > li {
-  padding: 5px 0 10px;
-  text-align: center;
 }
 
 /** header */
@@ -259,7 +234,7 @@ a:visited {
   transition: 300ms border-color;
 }
 
-/* search job bar */
+/* job search bar */
 .header-wrapper > .header-body > .header-b-searchbar > .search-job-group {
   width: calc(100% - 140px);
 }
@@ -274,7 +249,7 @@ a:visited {
   background-color: #fff;
 }
 
-/*search location  bar */
+/* location search bar */
 .header-wrapper > .header-body > .header-b-searchbar > .search-location-group {
   width: 100px;
 }
@@ -341,9 +316,11 @@ a:visited {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .header-wrapper > .header-body > .header-b-trustees > div > span {
   padding: 0 5px;
 }
+
 .header-wrapper > .header-body > .header-b-trustees > div > span > img {
   height: 1.5em;
 }
@@ -360,6 +337,7 @@ a:visited {
   width: 350px;
   height: 400px;
 }
+
 .header-wrapper > .header-image > .header-image-bdr > img {
   width: inherit;
   height: inherit;
@@ -428,7 +406,8 @@ a:visited {
   align-items: center;
   padding: 10px;
 }
-/* upper card */
+
+/* job card upper card */
 .recommendations-wrapper > .job-cards-cntr > .job-card > .job-upper-card {
   height: 50px;
   display: -webkit-box;
@@ -447,7 +426,7 @@ a:visited {
   background-color: var(--lighter-grey);
 }
 
-/* job middle card */
+/* job card middle card */
 .recommendations-wrapper > .job-cards-cntr > .job-card > .job-middle-card {
   font-weight: bold;
   padding-top: 20px;
@@ -464,7 +443,7 @@ a:visited {
   margin: 10px 0;
 }
 
-/* job lower card */
+/* job card lower card */
 .recommendations-wrapper > .job-cards-cntr > .job-card > .job-lower-card {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -486,6 +465,7 @@ a:visited {
   justify-content: space-around;
 }
 
+/* job card lower card button */
 .recommendations-wrapper
   > .job-cards-cntr
   > .job-card
@@ -500,6 +480,7 @@ a:visited {
   border-radius: 50px;
 }
 
+/* job card lower card button on active */
 .recommendations-wrapper
   > .job-cards-cntr
   > .job-card
@@ -516,6 +497,7 @@ a:visited {
   align-self: flex-end;
   margin: 20px 0;
 }
+
 .recommendations-wrapper > .prevnext-btns > span > i {
   padding-left: 10px;
   color: var(--lighter-grey);
@@ -526,28 +508,32 @@ a:visited {
   color: var(--bright-green);
 }
 
-/** how it works */
+/** how it works section */
 .howitworks-wrapper {
   margin: var(--section-div-margin);
   padding: var(--section-div-padding);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
-/* how it goes image cntr */
+/* how it works image cntr */
 .howitworks-wrapper > .howitworks-images {
   width: 60%;
   margin-right: 50px;
 }
 
-/* image */
 .howitworks-wrapper > .howitworks-images > div {
   position: relative;
   width: 100%;
   height: 100%;
 }
+
+/** how it works individual image cntr */
 .howitworks-wrapper > .howitworks-images > div > figure {
   position: absolute;
   width: 200px;
@@ -561,15 +547,18 @@ a:visited {
   top: calc(50% - 270px);
   left: calc(50% - 220px);
 }
+
 .howitworks-wrapper > .howitworks-images > div > figure:nth-child(2) {
-  top:calc(50% + 10px);
+  top: calc(50% + 10px);
   left: calc(50% - 220px);
 }
+
 .howitworks-wrapper > .howitworks-images > div > figure:nth-child(3) {
   left: 50%;
   top: 200px;
 }
 
+/* image */
 .howitworks-wrapper > .howitworks-images > div > figure > img {
   border-radius: 20px 20px 0 0;
   width: inherit;
@@ -601,15 +590,17 @@ a:visited {
   text-align: left;
 }
 
+/* how it works subtitle */
 .howitworks-wrapper > .howitworks-steps > p {
   margin-bottom: 35px;
 }
 
-/* how it works sub headers */
+/* all the paragraphs in the steps */
 .howitworks-wrapper > .howitworks-steps > .steps-card > p {
   margin-bottom: 20px;
 }
 
+/* how it works sub headers */
 .howitworks-wrapper > .howitworks-steps > .steps-card > .step-card-title {
   font-weight: bold;
 }
