@@ -320,3 +320,17 @@
     margin: 50px 30px;
   }
 }
+
+/*! 380px screen width and below */
+@media screen and (max-width: 380px){ 
+  /** recommended job section */
+  .recommendations-wrapper {
+  margin: var(--section-div-margin);
+  padding: 0;
+}
+/* individual job card*/
+.recommendations-wrapper > .job-cards-cntr > .job-card {
+  width: 280px;
+  margin: 0 10px;
+}
+}
