@@ -8,7 +8,7 @@
     left: 0;
     width: 100vw;
     height: calc(100vh - var(--nav-height));
-    background-color: var(--bgc);
+    background-color: var(--lightest-grey);
     text-align: center;
     transition: top 500ms;
     -webkit-transition: top 500ms;
