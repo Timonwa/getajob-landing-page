@@ -738,7 +738,6 @@ footer {
   margin: var(--section-div-margin);
   padding: var(--section-div-padding);
   margin-right: 0;
-  /* padding-right: 70px; */
   background-color: var(--lightest-grey);
 }
 

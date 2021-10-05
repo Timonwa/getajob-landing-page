@@ -1,9 +1,11 @@
 /*! 1280px screen width and above */
 @media screen and (min-width: 1280px) {
+  /** how it works */
   /* how it works image cntr */
   .howitworks-wrapper > .howitworks-images {
     width: 50%;
   }
+
   /* steps on how it works writeup */
   .howitworks-wrapper > .howitworks-steps {
     width: 50%;
@@ -139,7 +141,7 @@
     left: 50%;
   }
 
-  /** steps on how it works writeup */
+  /* steps on how it works writeup */
   .howitworks-wrapper > .howitworks-steps {
     width: 100%;
   }
@@ -190,6 +192,7 @@
     display: flex;
   }
 
+  /** user review */
   /* user review card */
   .reviews-wrapper > .review-card {
     -webkit-box-orient: vertical;
@@ -203,15 +206,17 @@
     -ms-flex-align: start;
     align-items: center;
   }
-  /* user review prev and next btns */
-  .reviews-wrapper > .review-card > .user-review > .prevnext-btns {
-    top: calc(100% - 50px);
-  }
 
   .reviews-wrapper > .review-card > .user-review {
     margin-left: 0px;
   }
 
+  /* user review prev and next btns */
+  .reviews-wrapper > .review-card > .user-review > .prevnext-btns {
+    top: calc(100% - 50px);
+  }
+
+  /** footer */
   .footer-wrapper > div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -226,12 +231,6 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .footer-wrapper > div > .footer-story {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 
   .footer-wrapper > div > .footer-story > p {
     -ms-flex-item-align: end;
@@ -239,6 +238,7 @@
     margin-bottom: 0;
   }
 
+  /* footer links */
   .footer-wrapper > div > .footer-nav {
     width: 100%;
     margin-left: 0;

@@ -55,8 +55,3 @@ a:visited {
 button {
   border: none;
 }
-
-/** to ensure that when you click on an id link, the nav will not cover the beginning of the content the id is pointing to */
-[id] {
-  scroll-margin-top: calc(var(--nav-height) + 5rem);
-}
