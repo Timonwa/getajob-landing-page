@@ -180,12 +180,10 @@ header::after {
 /* search bar inputs */
 .header-wrapper > .header-body > .header-b-searchbar > span > input,
 .header-wrapper > .header-body > .header-b-searchbar > span > button {
-  height: 30px;
   padding: 15px;
   border: 1px solid var(--lighter-grey);
   color: var(--light-grey);
   background-color: var(--bgc);
-  font-size: 0.8em;
 }
 
 /* search bar inputs placeholder */
@@ -195,7 +193,6 @@ header::after {
   > span
   > input::-webkit-input-placeholder {
   color: var(--light-grey);
-  font-size: 0.8em;
 }
 .header-wrapper
   > .header-body
@@ -203,7 +200,6 @@ header::after {
   > span
   > input::-moz-placeholder {
   color: var(--light-grey);
-  font-size: 0.8em;
 }
 .header-wrapper
   > .header-body
@@ -211,7 +207,6 @@ header::after {
   > span
   > input:-ms-input-placeholder {
   color: var(--light-grey);
-  font-size: 0.8em;
 }
 .header-wrapper
   > .header-body
@@ -219,7 +214,6 @@ header::after {
   > span
   > input::-ms-input-placeholder {
   color: var(--light-grey);
-  font-size: 0.8em;
 }
 .header-wrapper
   > .header-body
@@ -227,12 +221,10 @@ header::after {
   > span
   > input::placeholder {
   color: var(--light-grey);
-  font-size: 0.8em;
 }
 
 .header-wrapper > .header-body > .header-b-searchbar > span > input:focus {
   color: var(--light-grey);
-  font-size: 0.8em;
 }
 
 /* search input on hover */
@@ -303,7 +295,7 @@ header::after {
   > .header-b-searchbar
   > .search-button-group
   > button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   -webkit-transition: 300ms opacity;
   -o-transition: 300ms opacity;
   transition: 300ms opacity;
