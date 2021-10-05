@@ -371,7 +371,6 @@ header::after {
   }
   /* individual job card*/
   .recommendations-wrapper > .job-cards-cntr > .job-card {
-    width: 280px;
     margin: 0 10px;
   }
 }
