@@ -104,6 +104,10 @@
     justify-content: space-evenly;
   }
 
+  /** header */
+header::after {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 calc(80%));
+}
   /** header image */
   .header-wrapper > .header-image > .header-image-bdr {
     width: 280px;
@@ -150,7 +154,7 @@
 /*! 768px screen width and below */
 @media screen and (max-width: 786px) {
   /** body background shape image */
-  body::after {
+  header::after {
     right: 0px;
   }
 

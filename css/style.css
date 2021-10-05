@@ -1,23 +1,7 @@
 /** body */
 /* body background shape image */
 body {
-  position: relative;
   overflow-x: hidden;
-}
-
-body::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 100vw;
-  height: calc(var(--nav-height) + 100vh);
-  top: -30px;
-  right: 300px;
-  border-radius: 30px;
-  background-color: rgba(6, 148, 42, 0.05);
-  z-index: -10;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
 }
 
 /** nav bar */
@@ -149,6 +133,20 @@ a:visited {
 }
 
 /** header */
+header::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100vw;
+  height: calc(var(--nav-height) + 100%);
+  top: 0px;
+  right: 300px;
+  border-radius: 0 30px 30px 0;
+  background-color: rgba(6, 148, 42, 0.05);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
+}
+
 .header-wrapper {
   margin: var(--section-div-margin);
   padding: var(--section-div-padding);

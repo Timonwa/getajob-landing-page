@@ -6,11 +6,6 @@
   src: url("/fontawesome5.15/css/all.min.css");
 }
 
-@font-face {
-  font-family: "font-name";
-  src: url("/downloaded-font-file-path");
-}
-
 /** root file */
 :root {
   /** main color variables */
@@ -30,13 +25,13 @@
   --section-div-padding: 20px;
 
   /** font variables */
-  --main-font: ;
-  --secondary-font: ;
+  --serif-font: serif;
+  --sans-font: sans-serif;
 }
 
 /** body */
 body {
-  font-family: var(--main-font);
+  font-family: var(--sans-font);
   background-color: var(--bgc);
   color: var(--dark-grey);
   overflow-x: hidden;
