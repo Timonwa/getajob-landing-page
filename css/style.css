@@ -137,6 +137,7 @@ header::after {
   position: absolute;
   content: "";
   display: block;
+  z-index: -1;
   width: 100vw;
   height: calc(var(--nav-height) + 100%);
   top: 0px;
@@ -183,6 +184,7 @@ header::after {
   padding: 15px;
   border: 1px solid var(--lighter-grey);
   color: var(--light-grey);
+  background-color: var(--bgc);
   font-size: 0.8em;
 }
 
@@ -356,7 +358,6 @@ header::after {
 }
 
 /**  all sections */
-header,
 section,
 footer {
   background-color: var(--bgc);
