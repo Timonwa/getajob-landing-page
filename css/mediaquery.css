@@ -333,7 +333,16 @@ header::after {
   /* how it works individual image cntr */
   .howitworks-wrapper > .howitworks-images > div > figure {
     position: initial;
+    width: 250px;
   }
+
+  /* image */
+.howitworks-wrapper > .howitworks-images > div > figure > img {
+  border-radius: 20px 20px 0 0;
+  width: inherit;
+  height: 200px;
+  margin: 0;
+}
 
   /** cta section */
   .cta-wrapper {
