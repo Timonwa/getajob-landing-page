@@ -1,13 +1,13 @@
-/*! 960px screen width and below */
+/*! 1280px screen width and above */
 @media screen and (min-width: 1280px) {
-/* how it works image cntr */
-.howitworks-wrapper > .howitworks-images {
-  width: 50%;
-}
-/* steps on how it works writeup */
-.howitworks-wrapper > .howitworks-steps {
-  width: 50%;
-}
+  /* how it works image cntr */
+  .howitworks-wrapper > .howitworks-images {
+    width: 50%;
+  }
+  /* steps on how it works writeup */
+  .howitworks-wrapper > .howitworks-steps {
+    width: 50%;
+  }
 }
 
 /*! 960px screen width and below */
@@ -212,35 +212,43 @@
     margin-left: 0px;
   }
 
-
   .footer-wrapper > div {
-  flex-direction: column;
-}
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 
   /* footer contents */
-.footer-wrapper > div > .footer-story {
-  width: 100%;
-  display: flex;
-}
-.footer-wrapper > div > .footer-story {
-  width: 100%;
-  display: flex;
-}
+  .footer-wrapper > div > .footer-story {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-wrapper > div > .footer-story {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 
-.footer-wrapper > div > .footer-story> p {
-  align-self: flex-end;
-  margin-bottom: 0;
-}
+  .footer-wrapper > div > .footer-story > p {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
 
-.footer-wrapper > div > .footer-nav {
-  width: 100%;
-  margin-left: 0;
-  flex-wrap: wrap;
-}
+  .footer-wrapper > div > .footer-nav {
+    width: 100%;
+    margin-left: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 
-.footer-wrapper > div > .footer-nav >.footer-nav-content {
-  width: 50%;
-}
+  .footer-wrapper > div > .footer-nav > .footer-nav-content {
+    width: 50%;
+  }
 }
 
 /*! 500px screen width and below */
@@ -321,12 +329,6 @@
     position: initial;
   }
 
-/* individual categories */
-.categories-wrapper > .categories-cntr > .category {
-  width: 300px;
-  height: 300px;
-}
-
   /** cta section */
   .cta-wrapper {
     margin: 50px 30px;
@@ -334,15 +336,15 @@
 }
 
 /*! 380px screen width and below */
-@media screen and (max-width: 380px){ 
+@media screen and (max-width: 380px) {
   /** recommended job section */
   .recommendations-wrapper {
-  margin: var(--section-div-margin);
-  padding: 0;
-}
-/* individual job card*/
-.recommendations-wrapper > .job-cards-cntr > .job-card {
-  width: 280px;
-  margin: 0 10px;
-}
+    margin: var(--section-div-margin);
+    padding: 0;
+  }
+  /* individual job card*/
+  .recommendations-wrapper > .job-cards-cntr > .job-card {
+    width: 280px;
+    margin: 0 10px;
+  }
 }

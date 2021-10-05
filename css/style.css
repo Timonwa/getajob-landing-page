@@ -402,6 +402,7 @@ footer {
   width: 300px;
   margin: 0 20px;
   border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 20px 5px rgba(6, 148, 42, 0.05);
   box-shadow: 5px 5px 20px 5px rgba(6, 148, 42, 0.05);
 }
 
@@ -480,6 +481,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -719,6 +721,7 @@ footer {
   width: 200px;
   height: 200px;
   margin: 10px;
+  padding: 10px;
   border-radius: 10px;
 }
 
@@ -914,8 +917,14 @@ footer {
   color: #fff;
   background: rgba(43, 48, 58, 0.6);
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
@@ -963,17 +972,32 @@ footer {
 .footer-wrapper {
   margin: var(--section-div-margin);
   padding: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-top: 2px solid var(--lighter-grey);
   font-size: 0.8rem;
 }
 
 .footer-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -988,6 +1012,8 @@ footer {
   width: 60%;
   margin: 20px;
   margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .footer-wrapper > div > .footer-nav > .footer-nav-content {
@@ -1002,9 +1028,18 @@ footer {
 
 /* contents body */
 .footer-wrapper > div > .footer-nav > .footer-nav-content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -1013,7 +1048,12 @@ footer {
 }
 
 .footer-wrapper > div > .footer-nav > .footer-nav-content > .socials {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
