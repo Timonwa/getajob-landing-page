@@ -199,13 +199,43 @@
   .reviews-wrapper > .review-card > .user-review {
     margin-left: 0px;
   }
+
+
+  .footer-wrapper > div {
+  flex-direction: column;
+}
+
+  /* footer contents */
+.footer-wrapper > div > .footer-story {
+  width: 100%;
+  display: flex;
+}
+.footer-wrapper > div > .footer-story {
+  width: 100%;
+  display: flex;
+}
+
+.footer-wrapper > div > .footer-story> p {
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
+.footer-wrapper > div > .footer-nav {
+  width: 100%;
+  margin-left: 0;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper > div > .footer-nav >.footer-nav-content {
+  width: 50%;
+}
 }
 
 /*! 500px screen width and below */
 @media screen and (max-width: 500px) {
   /** root */
   :root {
-    --section-div-margin: 50px 20px;
+    --section-div-margin: 70px 20px;
     --section-div-padding: 20px;
   }
 
@@ -278,6 +308,12 @@
   .howitworks-wrapper > .howitworks-images > div > figure {
     position: initial;
   }
+
+/* individual categories */
+.categories-wrapper > .categories-cntr > .category {
+  width: 300px;
+  height: 300px;
+}
 
   /** cta section */
   .cta-wrapper {
