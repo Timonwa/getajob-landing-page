@@ -22,7 +22,7 @@
     left: 0;
     width: 100vw;
     height: calc(100vh - var(--nav-height));
-    background-color: var(--lightest-grey);
+    background-color: var(--bgc);
     text-align: center;
     transition: top 500ms;
     -webkit-transition: top 500ms;
@@ -47,6 +47,7 @@
     -ms-flex-order: 2;
     order: 2;
     text-align: center;
+  background-color: rgba(6, 148, 42, 0.05);
     width: 100%;
   }
 
@@ -75,6 +76,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding: 20px;
+  background-color: rgba(6, 148, 42, 0.05);
   }
 
   /* nav bar links */
