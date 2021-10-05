@@ -28,7 +28,7 @@ menu.addEventListener("click", function () {
 
 
 
-// job recommendations scroll
+//* job recommendations scroll
 var next = document.querySelector('.next-btn>i');
 next.onclick = function () {
     var container = document.querySelector('.job-cards-cntr');
@@ -55,4 +55,4 @@ function sideScroll(element, direction, speed, distance, step) {
             window.clearInterval(slideTimer);
         }
     }, speed);
-} 
+}
