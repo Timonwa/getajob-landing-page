@@ -1,4 +1,16 @@
 /*! 960px screen width and below */
+@media screen and (min-width: 1280px) {
+/* how it works image cntr */
+.howitworks-wrapper > .howitworks-images {
+  width: 50%;
+}
+/* steps on how it works writeup */
+.howitworks-wrapper > .howitworks-steps {
+  width: 50%;
+}
+}
+
+/*! 960px screen width and below */
 @media screen and (max-width: 960px) {
   /** nav link styling on smaller screens where the burger menu becomes visible and the nav links hidden */
   /* nav bar links and btns */
