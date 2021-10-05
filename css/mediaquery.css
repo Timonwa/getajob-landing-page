@@ -255,6 +255,10 @@ header::after {
   .footer-wrapper > div > .footer-nav > .footer-nav-content {
     width: 50%;
   }
+
+  .footer-wrapper > div > .footer-nav > .footer-nav-content > .socials {
+    flex-wrap: wrap;
+}
 }
 
 /*! 500px screen width and below */
