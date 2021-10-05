@@ -300,7 +300,7 @@ header::after {
     > .header-b-searchbar
     > .search-button-group
     > button {
-    border-radius: 20px;
+    border-radius: 30px;
   }
 
   /** how it works image cntr */
