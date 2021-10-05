@@ -344,6 +344,14 @@ header::after {
   margin: 0;
 }
 
+/** individual categories */
+.categories-wrapper > .categories-cntr > .category {
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
   /** cta section */
   .cta-wrapper {
     margin: 50px 30px;
