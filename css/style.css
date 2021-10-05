@@ -145,6 +145,7 @@ a:visited {
 /* burger menu */
 .nav-wrapper > .burger-menu {
   display: none;
+  color: var(--bright-green);
 }
 
 /** header */
