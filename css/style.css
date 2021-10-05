@@ -412,7 +412,7 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding:30px 20px;
+  padding: 30px 20px;
   width: inherit;
 }
 
@@ -483,10 +483,9 @@ footer {
   > .job-card
   > .job-lower-card
   > div
-  > .job-location
- {
-font-size: 0.8em;
-  }
+  > .job-location {
+  font-size: 0.8em;
+}
 /* job card lower card icon */
 .recommendations-wrapper
   > .job-cards-cntr
@@ -805,8 +804,8 @@ font-size: 0.8em;
 }
 
 .extrasection-wrapper > div > .company-single-logos > img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 /** reviews section */
@@ -1067,6 +1066,11 @@ font-size: 0.8em;
   margin-right: 10px;
   padding: 10px;
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
 }
 
 .footer-wrapper > p {
