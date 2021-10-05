@@ -230,11 +230,7 @@ a:visited {
   font-size: 0.8em;
 }
 
-.header-wrapper
-  > .header-body
-  > .header-b-searchbar
-  > span
-  > input:focus {
+.header-wrapper > .header-body > .header-b-searchbar > span > input:focus {
   color: var(--light-grey);
   font-size: 0.8em;
 }
@@ -361,6 +357,13 @@ a:visited {
   left: -20px;
 }
 
+/**  all sections */
+header,
+section,
+footer {
+  background-color: var(--bgc);
+}
+
 /** recommended job section */
 .recommendations-wrapper {
   margin: var(--section-div-margin);
@@ -443,6 +446,7 @@ a:visited {
 /* job card middle card */
 .recommendations-wrapper > .job-cards-cntr > .job-card > .job-middle-card {
   font-weight: bold;
+  height: 200px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -978,7 +982,6 @@ a:visited {
   width: 40%;
   margin: 20px;
   margin-left: 0;
-  
 }
 
 .footer-wrapper > div > .footer-nav {
@@ -987,34 +990,34 @@ a:visited {
   margin-right: 0;
   display: flex;
 }
-.footer-wrapper > div > .footer-nav >.footer-nav-content {
+.footer-wrapper > div > .footer-nav > .footer-nav-content {
   width: 25%;
   margin-bottom: 20px;
 }
 
 /* contents heading */
-.footer-wrapper > div > .footer-nav> .footer-nav-content > h4 {
+.footer-wrapper > div > .footer-nav > .footer-nav-content > h4 {
   text-align: left;
 }
 
 /* contents body */
-.footer-wrapper > div > .footer-nav> .footer-nav-content >div {
+.footer-wrapper > div > .footer-nav > .footer-nav-content > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.footer-wrapper > div > .footer-nav> .footer-nav-content >div a {
+.footer-wrapper > div > .footer-nav > .footer-nav-content > div a {
   padding-top: 10px;
 }
 
-.footer-wrapper > div > .footer-nav> .footer-nav-content > .socials {
+.footer-wrapper > div > .footer-nav > .footer-nav-content > .socials {
   flex-direction: row;
   justify-content: flex-start;
 }
 
-.footer-wrapper > div > .footer-nav> .footer-nav-content > .socials > a {
+.footer-wrapper > div > .footer-nav > .footer-nav-content > .socials > a {
   background-color: var(--light-green);
   color: var(--bright-green);
   margin: 5px 0;
@@ -1023,7 +1026,7 @@ a:visited {
   border-radius: 50%;
 }
 
-.footer-wrapper > p{
+.footer-wrapper > p {
   padding: 10px;
   color: var(--light-grey);
   font-size: 0.7rem;
