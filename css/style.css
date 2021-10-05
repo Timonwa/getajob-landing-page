@@ -804,10 +804,8 @@ footer {
 }
 
 .extrasection-wrapper > div > .company-single-logos > img {
-  width: 8
-  0px;
-  height: 8
-  0px;
+  width: 60px;
+  height: 60px;
 }
 
 /** reviews section */
@@ -1072,7 +1070,7 @@ footer {
   height: 30px;
   display: flex;
   justify-content: center;
-  align-items:  center;
+  align-items: center;
 }
 
 .footer-wrapper > p {
